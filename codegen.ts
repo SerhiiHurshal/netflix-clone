@@ -3,9 +3,9 @@ import type { CodegenConfig } from '@graphql-codegen/cli';
 const config: CodegenConfig = {
   overwrite: true,
   schema: 'https://ql-movie-api.herokuapp.com/graphql',
-  documents: './app/**/*.tsx',
+  documents: ['app/**/*.tsx', 'graphql/**/*.ts*', '!graphql/gql/**/*'],
   generates: {
-    'app/gql/': {
+    'graphql/gql/': {
       preset: 'client',
       plugins: [],
     },
