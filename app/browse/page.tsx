@@ -7,7 +7,8 @@ const getData = async () => {
   return data;
 };
 
-export default async function Home() {
+async function Browse() {
   return <div>Hello Next.js</div>;
 }
 
+export default Browse;
