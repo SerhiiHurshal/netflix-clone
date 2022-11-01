@@ -1,14 +1,14 @@
-import Image from 'next/image';
+import Logo from 'components/logo';
 import Navigation from './navigation';
 import SecondaryNavigation from './secondary-navigation';
 
 const Header = () => {
   return (
-    <header>
-      <Image src='/logo.svg' width={92} height={30} alt='logo' />
+    <nav>
+      <Logo />
       <Navigation />
       <SecondaryNavigation />
-    </header>
+    </nav>
   );
 };
 
