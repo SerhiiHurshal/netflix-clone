@@ -1,8 +1,8 @@
-import Link from 'next/link';
+import Link from 'components/link';
 
 const Navigation = () => {
   return (
-    <ul>
+    <ul className='flex gap-x-3'>
       <li>
         <Link href='/browse'>Home</Link>
       </li>

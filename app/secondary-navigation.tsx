@@ -1,8 +1,8 @@
-import Link from 'next/link';
+import Link from 'components/link';
 
 const SecondaryNavigation = () => {
   return (
-    <div>
+    <div className='flex gap-x-3'>
       <button>Search</button>
       <Link href='/kids'>Kids</Link>
       <button>Notification menu</button>
