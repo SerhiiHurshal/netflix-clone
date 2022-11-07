@@ -386,7 +386,25 @@ export type VideoResults = {
 export type PopularMoviesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type PopularMoviesQuery = { __typename?: 'Query', popularMovies: { __typename?: 'MoviesOutput', movies?: Array<{ __typename?: 'Movie', id: number, budget?: number | null }> | null } };
+export type PopularMoviesQuery = { __typename?: 'Query', popularMovies: { __typename?: 'MoviesOutput', movies?: Array<{ __typename?: 'Movie', id: number, original_title?: string | null, poster_path?: string | null, release_date?: string | null }> | null } };
+
+export type NowPlayingMoviesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export const PopularMoviesDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"popularMovies"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"popularMovies"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"movies"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"budget"}}]}}]}}]}}]} as unknown as DocumentNode<PopularMoviesQuery, PopularMoviesQueryVariables>;
+export type NowPlayingMoviesQuery = { __typename?: 'Query', nowPlayingMovies: { __typename?: 'MoviesOutput', movies?: Array<{ __typename?: 'Movie', id: number, original_title?: string | null, poster_path?: string | null, release_date?: string | null }> | null } };
+
+export type PopularShowsQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type PopularShowsQuery = { __typename?: 'Query', popularShows: { __typename?: 'ShowsOutput', shows?: Array<{ __typename?: 'Show', id: number, original_name?: string | null, poster_path?: string | null, first_air_date?: string | null }> | null } };
+
+export type AiringTodayShowsQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type AiringTodayShowsQuery = { __typename?: 'Query', airingTodayShows: { __typename?: 'ShowsOutput', shows?: Array<{ __typename?: 'Show', id: number, original_name?: string | null, poster_path?: string | null, first_air_date?: string | null }> | null } };
+
+
+export const PopularMoviesDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"popularMovies"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"popularMovies"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"movies"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"original_title"}},{"kind":"Field","name":{"kind":"Name","value":"poster_path"}},{"kind":"Field","name":{"kind":"Name","value":"release_date"}}]}}]}}]}}]} as unknown as DocumentNode<PopularMoviesQuery, PopularMoviesQueryVariables>;
+export const NowPlayingMoviesDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"nowPlayingMovies"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"nowPlayingMovies"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"movies"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"original_title"}},{"kind":"Field","name":{"kind":"Name","value":"poster_path"}},{"kind":"Field","name":{"kind":"Name","value":"release_date"}}]}}]}}]}}]} as unknown as DocumentNode<NowPlayingMoviesQuery, NowPlayingMoviesQueryVariables>;
+export const PopularShowsDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"popularShows"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"popularShows"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"shows"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"original_name"}},{"kind":"Field","name":{"kind":"Name","value":"poster_path"}},{"kind":"Field","name":{"kind":"Name","value":"first_air_date"}}]}}]}}]}}]} as unknown as DocumentNode<PopularShowsQuery, PopularShowsQueryVariables>;
+export const AiringTodayShowsDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"airingTodayShows"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"airingTodayShows"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"shows"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"original_name"}},{"kind":"Field","name":{"kind":"Name","value":"poster_path"}},{"kind":"Field","name":{"kind":"Name","value":"first_air_date"}}]}}]}}]}}]} as unknown as DocumentNode<AiringTodayShowsQuery, AiringTodayShowsQueryVariables>;
