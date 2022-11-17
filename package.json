@@ -49,5 +49,9 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
+  },
+  "volta": {
+    "node": "14.18.0",
+    "npm": "8.19.3"
   }
 }
