@@ -1,5 +1,5 @@
 import 'tailwindcss/tailwind.css';
-import { notoSans } from 'utils/fonts';
+import { workSans } from 'utils/fonts';
 import Header from './header';
 
 export default function RootLayout({
@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className={notoSans.variable}>
+    <html lang='en' className={workSans.variable}>
       <body className='min-h-screen'>
         <Header />
         <main>{children}</main>

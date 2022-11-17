@@ -1,10 +1,8 @@
-import { Noto_Sans } from '@next/font/google';
+import { Work_Sans } from '@next/font/google';
 
-const notoSans = Noto_Sans({
-  variable: '--noto-sans-regular',
-  // weight is provided just for typescsript
-  weight: '400',
+const workSans = Work_Sans({
+  variable: '--work-sans',
   subsets: ['latin'],
 });
 
-export { notoSans };
+export { workSans };
