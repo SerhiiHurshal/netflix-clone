@@ -1,4 +1,4 @@
-import Carousel from 'components/carousel';
+import Carousel from 'components/carousel/carousel';
 import { getAiringTodayShows, getPopularShows } from 'graphql/api';
 import { formatShowsData } from 'utils/formatData';
 

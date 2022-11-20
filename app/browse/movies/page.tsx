@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-import Carousel from 'components/carousel';
+import Carousel from 'components/carousel/carousel';
 import { getNowPlayingMovies, getPopularMovies } from 'graphql/api';
 import { formatMoviesData } from 'utils/formatData';
 

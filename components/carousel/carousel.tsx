@@ -7,19 +7,24 @@ export type CarouselCardProps = {
 };
 
 export type CarouselProps = {
-  items: CarouselCardProps[];
+  items?: CarouselCardProps[];
 };
 
 const Carousel = ({ items }: CarouselProps) => {
   return (
     <div className='flex overflow-auto whitespace-nowrap'>
       {items?.map((item) => (
-        <div key={`popular-movie-${item.id}`} className='w-40 m-1'>
+        <div
+          key={`carousel-item-${item.id}`}
+          data-testid='carousel-item'
+          className='w-40 m-1'
+        >
           <img
             alt='poster'
             src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}
             className='h-56 p-1'
             width='w-40'
+            loading='lazy'
           />
           <p className='w-40 max-w-full text-center overflow-clip text-ellipsis'>
             {item.title}

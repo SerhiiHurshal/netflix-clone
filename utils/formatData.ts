@@ -1,4 +1,4 @@
-import { CarouselCardProps } from 'components/carousel';
+import { CarouselCardProps } from 'components/carousel/carousel';
 import { PopularMoviesQuery, PopularShowsQuery } from 'graphql/gql/graphql';
 
 const formatMoviesData = (
