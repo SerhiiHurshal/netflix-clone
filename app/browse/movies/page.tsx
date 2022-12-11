@@ -9,13 +9,9 @@ async function Movies() {
   return (
     <div>
       <h2>Popular movies</h2>
-      <Carousel
-        items={formatMoviesData(popularMovies?.popularMovies?.movies)}
-      />
+      <Carousel items={formatMoviesData(popularMovies?.popularMovies)} />
       <h2>Now playing</h2>
-      <Carousel
-        items={formatMoviesData(nowPlayingMovies?.nowPlayingMovies?.movies)}
-      />
+      <Carousel items={formatMoviesData(nowPlayingMovies?.nowPlayingMovies)} />
     </div>
   );
 }
