@@ -1,0 +1,11 @@
+{
+  "name": "netflix-clone",
+  "schemaPath": "./graphql.schema.json",
+  "extensions": {
+    "endpoints": {
+      "Default GraphQL Endpoint": {
+        "url": "https://movieql.netlify.app/graphql"
+      }
+    }
+  }
+}
