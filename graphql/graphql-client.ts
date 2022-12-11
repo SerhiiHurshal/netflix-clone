@@ -1,7 +1,9 @@
 import { GraphQLClient } from 'graphql-request';
 
-const ENDPOINT = 'https://ql-movie-api.herokuapp.com/graphql';
+const ENDPOINT = 'https://movieql.netlify.app/graphql';
 
-const graphQLClient = new GraphQLClient(ENDPOINT);
+const graphQLClient = new GraphQLClient(ENDPOINT, {
+  cache: 'no-store',
+});
 
 export default graphQLClient;

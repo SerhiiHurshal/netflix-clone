@@ -2,7 +2,7 @@ import type { CodegenConfig } from '@graphql-codegen/cli';
 
 const config: CodegenConfig = {
   overwrite: true,
-  schema: 'https://ql-movie-api.herokuapp.com/graphql',
+  schema: 'https://movieql.netlify.app/graphql',
   documents: ['app/**/*.tsx', 'graphql/**/*.ts*', '!graphql/gql/**/*'],
   generates: {
     'graphql/gql/': {
@@ -16,4 +16,3 @@ const config: CodegenConfig = {
 };
 
 export default config;
-

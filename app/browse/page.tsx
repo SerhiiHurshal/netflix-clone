@@ -16,19 +16,13 @@ async function Browse() {
   return (
     <div>
       <h2>Popular movies</h2>
-      <Carousel
-        items={formatMoviesData(popularMovies?.popularMovies?.movies)}
-      />
+      <Carousel items={formatMoviesData(popularMovies?.popularMovies)} />
       <h2>Now playing</h2>
-      <Carousel
-        items={formatMoviesData(nowPlayingMovies?.nowPlayingMovies?.movies)}
-      />
+      <Carousel items={formatMoviesData(nowPlayingMovies?.nowPlayingMovies)} />
       <h2>Popular TV shows</h2>
-      <Carousel items={formatShowsData(popularShows?.popularShows?.shows)} />
+      <Carousel items={formatShowsData(popularShows?.popularShows)} />
       <h2>Airing today</h2>
-      <Carousel
-        items={formatShowsData(airingTodayShows?.airingTodayShows?.shows)}
-      />
+      <Carousel items={formatShowsData(airingTodayShows?.airingTodayShows)} />
     </div>
   );
 }
