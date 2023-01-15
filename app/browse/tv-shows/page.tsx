@@ -1,4 +1,4 @@
-import Carousel from 'components/carousel/carousel';
+import ContentSection from 'components/content-section';
 import { getAiringTodayShows, getPopularShows } from 'graphql/api';
 import { formatShowsData } from 'utils/formatData';
 
@@ -8,10 +8,14 @@ async function TVSows() {
 
   return (
     <div>
-      <h2>Popular TV shows</h2>
-      <Carousel items={formatShowsData(popularShows?.popularShows)} />
-      <h2>Airing today</h2>
-      <Carousel items={formatShowsData(airingTodayShows?.airingTodayShows)} />
+      <ContentSection
+        title='Popular TV shows'
+        items={formatShowsData(popularShows?.popularShows)}
+      />
+      <ContentSection
+        title='Airing today'
+        items={formatShowsData(airingTodayShows?.airingTodayShows)}
+      />
     </div>
   );
 }

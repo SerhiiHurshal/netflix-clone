@@ -1,4 +1,4 @@
-import Carousel from 'components/carousel/carousel';
+import ContentSection from 'components/content-section';
 import {
   getPopularMovies,
   getNowPlayingMovies,
@@ -15,14 +15,22 @@ async function Browse() {
 
   return (
     <div>
-      <h2>Popular movies</h2>
-      <Carousel items={formatMoviesData(popularMovies?.popularMovies)} />
-      <h2>Now playing</h2>
-      <Carousel items={formatMoviesData(nowPlayingMovies?.nowPlayingMovies)} />
-      <h2>Popular TV shows</h2>
-      <Carousel items={formatShowsData(popularShows?.popularShows)} />
-      <h2>Airing today</h2>
-      <Carousel items={formatShowsData(airingTodayShows?.airingTodayShows)} />
+      <ContentSection
+        title='Popular movies'
+        items={formatMoviesData(popularMovies?.popularMovies)}
+      />
+      <ContentSection
+        title='Now playing'
+        items={formatMoviesData(nowPlayingMovies?.nowPlayingMovies)}
+      />
+      <ContentSection
+        title='Popular TV shows'
+        items={formatShowsData(popularShows?.popularShows)}
+      />
+      <ContentSection
+        title='Airing today'
+        items={formatShowsData(airingTodayShows?.airingTodayShows)}
+      />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import Carousel from 'components/carousel/carousel';
+import ContentSection from 'components/content-section';
 import { getNowPlayingMovies, getPopularMovies } from 'graphql/api';
 import { formatMoviesData } from 'utils/formatData';
 
@@ -8,10 +8,14 @@ async function Movies() {
 
   return (
     <div>
-      <h2>Popular movies</h2>
-      <Carousel items={formatMoviesData(popularMovies?.popularMovies)} />
-      <h2>Now playing</h2>
-      <Carousel items={formatMoviesData(nowPlayingMovies?.nowPlayingMovies)} />
+      <ContentSection
+        title='Popular movies'
+        items={formatMoviesData(popularMovies?.popularMovies)}
+      />
+      <ContentSection
+        title='Now playing'
+        items={formatMoviesData(nowPlayingMovies?.nowPlayingMovies)}
+      />
     </div>
   );
 }
