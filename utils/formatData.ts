@@ -8,7 +8,6 @@ const formatMoviesData = (
     movies?.map((movie) => ({
       id: `${movie?.id}` || '',
       poster_path: movie?.poster_path || '',
-      title: movie?.title || '',
     })) || []
   );
 };
@@ -20,7 +19,6 @@ const formatShowsData = (
     shows?.map((show) => ({
       id: `${show?.id}` || '',
       poster_path: show?.poster_path || '',
-      title: show?.name || '',
     })) || []
   );
 };

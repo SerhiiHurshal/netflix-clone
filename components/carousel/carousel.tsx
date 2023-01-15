@@ -3,7 +3,6 @@
 export type CarouselCardProps = {
   id: string;
   poster_path: string;
-  title: string;
 };
 
 export type CarouselProps = {
@@ -26,9 +25,6 @@ const Carousel = ({ items }: CarouselProps) => {
             width='w-40'
             loading='lazy'
           />
-          <p className='w-40 max-w-full text-center overflow-clip text-ellipsis'>
-            {item.title}
-          </p>
         </div>
       ))}
     </div>
