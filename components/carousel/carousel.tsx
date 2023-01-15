@@ -17,13 +17,13 @@ const Carousel = ({ items }: CarouselProps) => {
           <div
             key={`carousel-item-${item.id}`}
             data-testid='carousel-item'
-            className='w-40 px-[.2vw]'
+            className='w-[20%] min-w-[20%] px-[.2vw]'
           >
             <img
               alt='poster'
               src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}
-              className='h-56'
-              width='w-40'
+              className='h-[11vw] object-cover object-bottom  rounded-[.2vw]'
+              width='100%'
               loading='lazy'
             />
           </div>
