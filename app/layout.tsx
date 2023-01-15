@@ -1,4 +1,5 @@
 import 'tailwindcss/tailwind.css';
+import 'styles/main.css';
 import { workSans } from 'utils/fonts';
 import Header from 'components/header';
 
