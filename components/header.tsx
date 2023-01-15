@@ -4,7 +4,7 @@ import SecondaryNavigation from './secondary-navigation';
 
 const Header = () => {
   return (
-    <nav className='flex justify-between w-full py-5 text-sm px-[4%]'>
+    <nav className='flex justify-between w-full py-5 text-sm px-[4%] fixed bg-zinc-900'>
       <div className='flex gap-x-11'>
         <Logo />
         <Navigation />

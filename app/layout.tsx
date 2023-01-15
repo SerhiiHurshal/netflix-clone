@@ -12,6 +12,7 @@ export default function RootLayout({
     <html lang='en' className={workSans.variable}>
       <body className='min-h-screen bg-zinc-900'>
         <Header />
+        <div className='h-20' />
         <main>{children}</main>
         <footer>Footer</footer>
       </body>
