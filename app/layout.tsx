@@ -9,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={workSans.variable}>
-      <body className='min-h-screen'>
+      <body className='min-h-screen bg-zinc-900'>
         <Header />
         <main>{children}</main>
         <footer>Footer</footer>
